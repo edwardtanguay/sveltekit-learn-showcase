@@ -1,7 +1,10 @@
 <script>
+	import Example from '../components/Example.svelte';
 	import Header from '../components/Header.svelte';
 	import Ex001Test from '../components/examples/Ex001Test.svelte';
 </script>
 
-<Header/>
-<Ex001Test />
+<Header />
+<Example title="Ex001Test">
+	<Ex001Test />
+</Example>
