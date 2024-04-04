@@ -11,6 +11,6 @@
 
 <style>
 	a.active {
-		color: rgb(253, 144, 94) !important;
+		color: yellow;
 	}
 </style>
