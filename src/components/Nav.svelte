@@ -23,7 +23,13 @@
 
 	const highlightMenuItem = (page: any, pageItem: PageItem) => {
 		let rb = false;
-		rb = $page.url.pathname === pageItem.href;
+		const pathname =$page.url.pathname; 
+		rb = pathname === pageItem.href;
+		if(pageItem.href.startsWith('/blog')) {
+			if(pathname.startsWith(pageItem.href)) {
+				rb = true;
+			}
+		}
 		return rb;
 	};
 </script>
