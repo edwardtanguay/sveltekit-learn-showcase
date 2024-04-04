@@ -10,10 +10,10 @@
 	};
 </script>
 
-{message}
+<!-- {message}
 <div>
 	<button on:click={changeMessage} class="bg-gray-300 px-2 py-1 rounded mt-2">change the message</button>
-</div>
+</div> -->
 <Example title="Ex001Test">
 	<Ex001Test />
 </Example>
