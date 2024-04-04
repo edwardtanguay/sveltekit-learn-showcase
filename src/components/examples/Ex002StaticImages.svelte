@@ -1,4 +1,5 @@
 <script lang="ts">
-	import img from "$lib/images/sveltekit.jpg"; 
+	import img from '$lib/images/construction.png';
 </script>
-<img class="mt-2 mb-2" src={img} alt="sveltekit icon"/>
+
+<img class="mt-2 mb-1 w-[10rem]" src={img} alt="construction" />
