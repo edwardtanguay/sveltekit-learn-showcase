@@ -1,5 +1,6 @@
 - x set up blog to work with active class etc.
 	- x mark as kind: deep
+- .. in blog show slug
 - .. add over to Employees loaded with json file
 	- first make employees page and show data from json
 - if works, delete blog
