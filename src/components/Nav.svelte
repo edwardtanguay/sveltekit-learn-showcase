@@ -22,6 +22,11 @@
 			href: '/blog',
 			title: 'Blog',
 			kind: "deep"
+		},
+		{
+			href: '/employees',
+			title: 'Employees',
+			kind: "deep"
 		}
 	];
 
