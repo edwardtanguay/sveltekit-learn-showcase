@@ -1,0 +1,3 @@
+- .. set up blog to work with active class etc.
+	- .. mark as kind: deep
+- switch over to Employees loaded with json file

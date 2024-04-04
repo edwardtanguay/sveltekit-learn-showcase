@@ -4,20 +4,24 @@
 	type PageItem = {
 		href: string;
 		title: string;
+		kind: "shallow" | "deep"
 	};
 
 	const pageItems: PageItem[] = [
 		{
 			href: '/',
-			title: 'Home'
+			title: 'Home',
+			kind: "shallow" 
 		},
 		{
 			href: '/basics',
-			title: 'Basics'
+			title: 'Basics',
+			kind: "shallow"
 		},
 		{
 			href: '/blog',
-			title: 'Blog'
+			title: 'Blog',
+			kind: "deep"
 		}
 	];
 
@@ -25,7 +29,7 @@
 		let rb = false;
 		const pathname =$page.url.pathname; 
 		rb = pathname === pageItem.href;
-		if(pageItem.href.startsWith('/blog')) {
+		if(pageItem.kind === "deep") {
 			if(pathname.startsWith(pageItem.href)) {
 				rb = true;
 			}
