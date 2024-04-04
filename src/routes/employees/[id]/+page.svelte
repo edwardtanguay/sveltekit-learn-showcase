@@ -1,12 +1,16 @@
 <script lang="ts">
 	import employees from '../../../data/employees.json';
-	import {page} from '$app/stores';
+	import { page } from '$app/stores';
+	import Employee from '../../../components/Employee.svelte';
 
-	const employee = employees.find(m => String(m.employeeID) === $page.params.id);
+	const employee = employees.find((m) => String(m.employeeID) === $page.params.id);
 </script>
 
 {#if employee}
-<p>{employee?.lastName}</p>
+	<Employee employee={employee} />
 {:else}
-<p>ID "{$page.params.id}" does not exist, see <a href="/employees" class="underline">employee list</a>.</p>
+	<p>
+		ID "{$page.params.id}" does not exist, see
+		<a href="/employees" class="underline">employee list</a>.
+	</p>
 {/if}
