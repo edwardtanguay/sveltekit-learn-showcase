@@ -4,7 +4,7 @@
 	export let employee: Employee;
 </script>
 
-<div class="flex gap-3 w-[100vmin] mt-6">
+<div class="flex gap-3 w-full mt-6">
 	<div class="shrink-0 grow-0">
 		<img
 			src={`../images/employees/employee_${employee.employeeID}.jpg`}
