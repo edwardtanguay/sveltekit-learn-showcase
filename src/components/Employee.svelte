@@ -5,5 +5,6 @@
 </script>
 
 <div>
+	<img src={`../images/employees/employee_${employee.employeeID}.jpg`} alt="employee"/>
 	<p>{employee.firstName} {employee.lastName}</p>
 </div>
