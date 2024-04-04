@@ -21,16 +21,16 @@
 		}
 	];
 
-	const highlightMenuItem = (pageItem: PageItem) => {
-		console.log('pathname', $page.url.pathname);
-		console.log('href', pageItem.href);
-		return $page.url.pathname === pageItem.href;
+	const highlightMenuItem = (page: any, pageItem: PageItem) => {
+		let rb = false;
+		rb = $page.url.pathname === pageItem.href;
+		return rb;
 	};
 </script>
 
 <nav class="bg-slate-600 px-4 pb-1 mb-3 rounded text-slate-200 flex gap-3">
 	{#each pageItems as pageItem}
-		<a class:active={() => highlightMenuItem(pageItem)} href={pageItem.href}>{pageItem.title}</a>
+		<a class:active={highlightMenuItem($page, pageItem)} href={pageItem.href}>{pageItem.title}</a>
 	{/each}
 </nav>
 
