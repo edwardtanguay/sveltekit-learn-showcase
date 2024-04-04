@@ -38,7 +38,7 @@
 	};
 </script>
 
-<nav class="bg-slate-600 px-4 pb-1 mb-3 rounded text-slate-200 flex gap-3">
+<nav class="bg-slate-600 px-4 py-1 mb-3 rounded text-slate-200 flex gap-3">
 	{#each pageItems as pageItem}
 		<a class:active={highlightMenuItem($page, pageItem)} href={pageItem.href}>{pageItem.title}</a>
 	{/each}
