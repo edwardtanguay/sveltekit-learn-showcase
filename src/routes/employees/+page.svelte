@@ -2,7 +2,9 @@
 	import employees from '../../data/employees.json';
 </script>
 
-<ul class="list-disc ml-6 mt-6">
+<p class="mt-6 mb-4">These employees are loaded in the list and single-item pages.</p>
+
+<ul class="list-disc ml-6">
 	{#each employees as employee}
 		<li class="mb-2">
 			<a href={`/employees/${employee.employeeID}`} class="underline"
