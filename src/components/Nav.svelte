@@ -44,6 +44,10 @@
 		}
 		return rb;
 	};
+
+	const handleClickMenuItem = () => {
+		$mobileMenuShowing = false;
+	}
 </script>
 
 <svelte:window bind:innerWidth={innerWidth} />
@@ -54,7 +58,7 @@
 	>
 		{#each pageItems as pageItem}
 			<div>
-				<a class:active={highlightMenuItem($page, pageItem)} href={pageItem.href}
+				<a class:active={highlightMenuItem($page, pageItem)} on:click={handleClickMenuItem} href={pageItem.href}
 					>{pageItem.title}</a
 				>
 			</div>
