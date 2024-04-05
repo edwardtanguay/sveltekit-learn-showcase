@@ -4,33 +4,38 @@
 	type PageItem = {
 		href: string;
 		title: string;
-		kind: "shallow" | "deep"
+		kind: 'shallow' | 'deep';
 	};
 
 	const pageItems: PageItem[] = [
 		{
 			href: '/',
 			title: 'Home',
-			kind: "shallow" 
+			kind: 'shallow'
 		},
 		{
 			href: '/basics',
 			title: 'Basics',
-			kind: "shallow"
+			kind: 'shallow'
 		},
 		{
 			href: '/employees',
 			title: 'Employees',
-			kind: "deep"
+			kind: 'deep'
+		},
+		{
+			href: '/serverloadedemployees',
+			title: 'SL Employees',
+			kind: 'deep'
 		}
 	];
 
 	const highlightMenuItem = (page: any, pageItem: PageItem) => {
 		let rb = false;
-		const pathname =$page.url.pathname; 
+		const pathname = $page.url.pathname;
 		rb = pathname === pageItem.href;
-		if(pageItem.kind === "deep") {
-			if(pathname.startsWith(pageItem.href)) {
+		if (pageItem.kind === 'deep') {
+			if (pathname.startsWith(pageItem.href)) {
 				rb = true;
 			}
 		}
@@ -38,9 +43,11 @@
 	};
 </script>
 
-<nav class="bg-slate-600 px-4 py-1 mb-3 rounded text-slate-200 flex gap-3">
+<nav class="bg-slate-600 px-4 py-1 mb-3 rounded text-slate-200 flex gap-3 flex-col md:flex-row pb-2">
 	{#each pageItems as pageItem}
-		<a class:active={highlightMenuItem($page, pageItem)} href={pageItem.href}>{pageItem.title}</a>
+		<div>
+			<a class:active={highlightMenuItem($page, pageItem)} href={pageItem.href}>{pageItem.title}</a>
+		</div>
 	{/each}
 </nav>
 
