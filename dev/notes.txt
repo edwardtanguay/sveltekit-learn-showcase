@@ -1,3 +1,5 @@
 - .. make reponsive hamburger menu
 	- x rename URL to sveltekit-learning-showcase
 	- .. put in hamburger icon with smaller title
+		- https://joyofcode.xyz/using-iconify-with-svelte#iconify
+		- https://icones.js.org/
