@@ -11,3 +11,5 @@
 		<a href="/serverloadedemployees" class="underline">employee list</a>.
 	</p>
 {/if}
+
+<p class="mt-6">view list of <a class="underline" href="/serverloadedemployees">all server-side loaded employees</a></p>
