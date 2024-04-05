@@ -1,6 +1,9 @@
 <script lang="ts">
 	import SiteInfo from '../components/SiteInfo.svelte';
 	import img from '$lib/images/sveltekit.jpg';
+	import * as config from '../config';
+
+	config.determineResponsiveStatus();
 </script>
 
 <SiteInfo />

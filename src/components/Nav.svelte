@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import * as config from '../config';
+
+	console.log(config.getResponsiveStatus());
 
 	type PageItem = {
 		href: string;
