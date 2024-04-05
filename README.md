@@ -1,38 +1,16 @@
-# create-svelte
+# sveltekit-the-learn-showcase
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is a showcase site that I am creating while learning SvelteKit. It's purpose is to get SvelteKit's features working together as a realistic, online site at Vercel.
 
-## Creating a project
+- repo: https://github.com/edwardtanguay/sveltekit-the-learn-showcase
+- live: https://sveltekit-the-learn-showcase.vercel.app
 
-If you're seeing this, you've probably already done this step. Congrats!
+## currently creating responsive layout
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+![grafik](https://github.com/edwardtanguay/sveltekit-the-learn-showcase/assets/446574/e5c312e3-47d5-4834-91bc-0a09d05c3718)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## setup and start
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- clone locally
+- `npm ii`
+- `npm run dev`
