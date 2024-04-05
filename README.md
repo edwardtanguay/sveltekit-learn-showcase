@@ -12,5 +12,5 @@ This is a showcase site that I am creating while learning SvelteKit. It's purpos
 ## setup and start
 
 - clone locally
-- `npm ii`
+- `npm i`
 - `npm run dev`
