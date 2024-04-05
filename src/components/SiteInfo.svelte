@@ -3,12 +3,12 @@
 	<li>
 		<a
 			class="underline"
-			href="https://github.com/edwardtanguay/sveltekit-learn-showcase"
+			href="https://github.com/edwardtanguay/sveltekit-the-learn-showcase"
 			target="_blank">repository</a
 		>
 	</li>
 	<li>
-		<a class="underline" href="https://sveltekit-learn-showcase.vercel.app" target="_blank"
+		<a class="underline" href="https://sveltekit-the-learn-showcase.vercel.app" target="_blank"
 			>live site</a
 		>
 	</li>
