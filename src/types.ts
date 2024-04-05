@@ -5,3 +5,12 @@ export type Employee = {
 	title: string;
 	notes: string;
 }
+
+export const blankEmployee = {
+	employeeID: 0,
+	firstName: '',
+	lastName: '',
+	title: '',
+	notes: '',
+
+}
