@@ -2,7 +2,7 @@
 	import employees from '../../data/employees.json';
 </script>
 
-<ul class="list-disc ml-6">
+<ul class="list-disc ml-6 mt-6">
 	{#each employees as employee}
 		<li class="mb-2">
 			<a href={`/employees/${employee.employeeID}`} class="underline"
