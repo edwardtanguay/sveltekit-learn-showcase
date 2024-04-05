@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { mobileMenuShowing } from '../stores';
 	import Nav from './Nav.svelte';
 	import 'iconify-icon';
 
 	const handleMenuHideShow = () => {
-		alert('hide/show')
+		$mobileMenuShowing = !$mobileMenuShowing;
 	}
 </script>
 
