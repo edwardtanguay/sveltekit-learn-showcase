@@ -11,6 +11,7 @@ const employees: Employee[] = _employees.map((m) => ({
 
 export function load() {
 	return {
-		employees
+		employees,
+		messages: ['mess 1', 'mess 2', 'mess 3']
 	};
 }

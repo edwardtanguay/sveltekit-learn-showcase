@@ -3,6 +3,7 @@
 	export let data;
 </script>
 
+<p>There are {data.messages.length} messages.</p>
 {#if data.employee}
 	<Employee employee={data.employee} />
 {:else}

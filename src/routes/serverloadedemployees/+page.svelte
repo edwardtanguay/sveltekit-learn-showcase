@@ -4,6 +4,8 @@
 
 <p class="mt-6 mb-4">These employees are loaded in server-side loading pages.</p>
 
+<p>There are {data.messages.length} messages.</p>
+
 <ul class="list-disc ml-6">
 	{#each data.employees as employee}
 		<li class="mb-2">
