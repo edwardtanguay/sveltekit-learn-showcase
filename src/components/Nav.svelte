@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 	import { mobileMenuShowing } from '../stores';
 
+	let innerWidth = 0;
+
 	type PageItem = {
 		href: string;
 		title: string;
@@ -44,7 +46,9 @@
 	};
 </script>
 
-{#if $mobileMenuShowing}
+<svelte:window bind:innerWidth={innerWidth} />
+
+{#if $mobileMenuShowing || innerWidth > 768}
 	<nav
 		class="bg-slate-600 px-4 pt-2 md:pt-1 pb-3 md:pb-1 mb-3 rounded text-slate-200 flex gap-3 flex-col md:flex-row"
 	>
