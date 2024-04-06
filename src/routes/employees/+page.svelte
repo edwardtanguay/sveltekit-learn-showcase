@@ -1,5 +1,5 @@
 <script lang="ts">
-	import employees from '../../data/employees.json';
+	import employees from '$lib/data/employees.json';
 </script>
 
 <p class="mt-6 mb-4">These employees are loaded in the list and single-item pages.</p>

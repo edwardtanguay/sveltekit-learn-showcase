@@ -1,4 +1,4 @@
-import _employees from '../../data/employees.json';
+import _employees from '$lib/data/employees.json';
 import type { Employee } from '../../types';
 
 const employees: Employee[] = _employees.map((m) => ({

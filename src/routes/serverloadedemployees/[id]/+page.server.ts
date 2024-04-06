@@ -1,4 +1,4 @@
-import _employees from '../../../data/employees.json';
+import _employees from '$lib/data/employees.json';
 import { blankEmployee, type Employee } from '../../../types';
 
 export function load({ params }) {
@@ -18,6 +18,6 @@ export function load({ params }) {
 	} else {
 		return {
 			blankEmployee
-		}
+		};
 	}
 }
