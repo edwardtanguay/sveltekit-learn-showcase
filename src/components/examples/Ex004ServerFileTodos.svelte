@@ -1,6 +1,6 @@
 <script lang="ts">
-	let todos = ['111', '222'];
-
+	import _todos from '$lib/data/todos.json';
+	let todos = _todos;
 	$: totalDoubled = todos.length * 2;
 
 	const addTodo = () => {
