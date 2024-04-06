@@ -11,9 +11,9 @@
 	</Example>
 	<Example title="Ex006MongoDbAtlasTodoCrud">
 		<div>
-			<p class="mb-3 mt-2">There are {data.todos.length} todos.</p>
+			<p class="mb-3 mt-2">There are {data.props.todos.length} todos.</p>
 			<ul class="font-mono text-orange-900">
-				{#each data.todos as todo}
+				{#each data.props.todos as todo}
 					<li>
 						{`[${todo.id}] - ${tools.displayStars(todo.stars)} - ${todo.finished ? 'done' : 'todo'} - ${todo.title}`}
 					</li>
