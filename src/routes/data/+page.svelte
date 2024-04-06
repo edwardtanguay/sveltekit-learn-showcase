@@ -1,8 +1,8 @@
 <script>
 	import Example from '../../components/Example.svelte';
-	import Ex004ServerFileCount from '../../components/examples/Ex004ServerFileCount.svelte';
+	import Ex004ServerFileTodos from '../../components/examples/Ex004ServerFileTodos.svelte';
 </script>
 
-<Example title="Ex004ServerFileCount">
-	<Ex004ServerFileCount/>
+<Example title="Ex004ServerFileTodos">
+	<Ex004ServerFileTodos/>
 </Example>
