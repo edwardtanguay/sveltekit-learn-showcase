@@ -8,9 +8,8 @@
 
 	const addTodo = () => {
 		if (newTodo.trim() !== '') {
-			todos.push(newTodo);
+			todos = [...todos, newTodo];
 			newTodo = '';
-			todos = structuredClone(todos);
 		}
 	};
 </script>
