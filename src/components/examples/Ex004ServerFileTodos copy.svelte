@@ -12,6 +12,7 @@
 <p class="w-fit max-w-[15rem] text-xs">
 	The todo data is being permeated in a file. This won't work on Vercel.
 </p>
+<p class="w-fit max-w-[15rem] text-xs">TODO: REDO THIS WITH MONGODB</p>
 <button on:click={addTodo} class="bg-gray-300 px-2 mt-2 rounded border border-gray-500 w-fit"
 	>Add Todo</button
 >
