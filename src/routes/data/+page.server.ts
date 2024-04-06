@@ -3,19 +3,18 @@ import * as mongodb from '$lib/dataLayer/mongodb.server';
 
 import type { Todo } from '../../types';
 
-
-const fetchTodos = async () => {
-	try {
-		const todos:Todo[] = await mongodb.getAllTodos();
-		return todos;
-	} catch (error: any) {
-		throw new Error(`ERROR: ${error.message}`);
-	}
-};
+const _todos: any[] = await mongodb.getAllTodos();
+const todos: Todo[] = [];
+for (const _todo of _todos) {
+	todos.push({
+		title: _todo.title,
+		stars: _todo.stars,   
+		finished: _todo.finished  
+	});
+}
 
 export function load() {
 	return {
-		fetchTodos
+		todos
 	};
 }
-
