@@ -1,7 +1,6 @@
 <script>
 	import Example from '../../components/Example.svelte';
 	import Ex004ServerFileTodos from '../../components/examples/Ex004ServerFileTodos.svelte';
-	import Ex006MongoDbAtlasTodoCrud from '../../components/examples/Ex006MongoDbAtlasTodoCrud.svelte';
 </script>
 
 <section>
@@ -9,6 +8,9 @@
 		<Ex004ServerFileTodos />
 	</Example>
 	<Example title="Ex006MongoDbAtlasTodoCrud">
-		<Ex006MongoDbAtlasTodoCrud />
+		<div>
+			<p>test001</p>
+			<p>test002</p>
+		</div>
 	</Example>
 </section>

@@ -2,10 +2,11 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import type { Todo } from '../../types';
+import { MONGO_COLLECTION, MONGO_USER, MONGO_PASSWORD, MONGO_ATLAS_CLUSTER_URL, MONGO_DATABASE } from '$env/static/private';
 
 dotenv.config();
 
-const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_ATLAS_CLUSTER_URL}/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_ATLAS_CLUSTER_URL}/${MONGO_DATABASE}?retryWrites=true&w=majority&appName=Cluster0`;
 const clientOptions: any = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 await mongoose.connect(uri, clientOptions);
 
@@ -17,12 +18,12 @@ const todoSchema = new Schema({
 	finished: Boolean
 });
 
-export const getAllTodos = async () => {
+export const getAllTodos = async (): Promise<Todo[]> => {
 	return new Promise((resolve, reject) => {
 		try {
 			(async () => {
-				const response = mongoose.connection.db.collection(process.env.MONGO_COLLECTION);
-				const todos = await response.find().toArray();
+				const response = mongoose.connection.db.collection(MONGO_COLLECTION);
+				const todos:any[] = await response.find().toArray();
 				resolve(todos);
 			})();
 		} catch (error: any) {
