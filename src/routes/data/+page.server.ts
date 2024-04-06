@@ -7,13 +7,14 @@ const _todos: any[] = await mongodb.getAllTodos();
 const todos: Todo[] = [];
 for (const _todo of _todos) {
 	todos.push({
+		id: String(_todo._id),
 		title: _todo.title,
-		stars: _todo.stars,   
-		finished: _todo.finished  
+		stars: _todo.stars,
+		finished: _todo.finished
 	});
 }
 
-export function load() {
+export async function load() {
 	return {
 		todos
 	};
