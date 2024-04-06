@@ -30,6 +30,11 @@
 			href: '/serverloadedemployees',
 			title: 'SL Employees',
 			kind: 'deep'
+		},
+		{
+			href: '/data',
+			title: 'Data',
+			kind: 'shallow'
 		}
 	];
 
@@ -47,10 +52,10 @@
 
 	const handleClickMenuItem = () => {
 		$mobileMenuShowing = false;
-	}
+	};
 </script>
 
-<svelte:window bind:innerWidth={innerWidth} />
+<svelte:window bind:innerWidth />
 
 {#if $mobileMenuShowing || innerWidth > 768}
 	<nav
@@ -58,8 +63,10 @@
 	>
 		{#each pageItems as pageItem}
 			<div>
-				<a class:active={highlightMenuItem($page, pageItem)} on:click={handleClickMenuItem} href={pageItem.href}
-					>{pageItem.title}</a
+				<a
+					class:active={highlightMenuItem($page, pageItem)}
+					on:click={handleClickMenuItem}
+					href={pageItem.href}>{pageItem.title}</a
 				>
 			</div>
 		{/each}
