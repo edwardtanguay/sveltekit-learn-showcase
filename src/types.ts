@@ -12,5 +12,10 @@ export const blankEmployee = {
 	lastName: '',
 	title: '',
 	notes: '',
+}
 
+export type Todo = {
+	title: string;
+	stars: number;
+	finished: boolean;
 }
