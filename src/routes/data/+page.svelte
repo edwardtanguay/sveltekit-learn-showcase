@@ -1,10 +1,10 @@
 <script>
 	import Example from '../../components/Example.svelte';
-	import Ex005ArrayStateVariable from '../../components/examples/Ex005ArrayStateVariable.svelte';
+	import Ex004ServerFileTodos from '../../components/examples/Ex004ServerFileTodos.svelte';
 </script>
 
-	<section>
-		<Example title="Ex005ArrayStateVariable">
-			<Ex005ArrayStateVariable />
-		</Example>
-	</section>
+<section>
+	<Example title="Ex005ArrayStateVariable">
+		<Ex004ServerFileTodos />
+	</Example>
+</section>

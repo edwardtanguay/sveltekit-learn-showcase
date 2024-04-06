@@ -7,9 +7,11 @@
 	$: totalDoubled = todos.length * 2;
 
 	const addTodo = () => {
-		todos.push(newTodo);
-		newTodo = '';
-		todos = structuredClone(todos);
+		if (newTodo.trim() !== '') {
+			todos.push(newTodo);
+			newTodo = '';
+			todos = structuredClone(todos);
+		}
 	};
 </script>
 
@@ -35,5 +37,4 @@
 		mutating the value of the original variable, e.g. by spreading the old variable or using
 		structuredClone.
 	</p>
-
 </div>
