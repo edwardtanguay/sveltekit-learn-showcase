@@ -14,11 +14,9 @@ for (const _todo of _todos) {
 	});
 }
 
+
 export async function load() {
 	return {
-		maxage: 0,
-		props: {
-			todos
-		}
+		todos
 	};
 }
