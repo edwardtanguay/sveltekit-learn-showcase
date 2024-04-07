@@ -14,7 +14,6 @@ for (const _todo of _todos) {
 	});
 }
 
-
 export async function load() {
 	return {
 		todos

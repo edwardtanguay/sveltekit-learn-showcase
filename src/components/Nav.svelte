@@ -64,6 +64,7 @@
 		{#each pageItems as pageItem}
 			<div>
 				<a
+					data-sveltekit-reload 
 					class:active={highlightMenuItem($page, pageItem)}
 					on:click={handleClickMenuItem}
 					href={pageItem.href}>{pageItem.title}</a
