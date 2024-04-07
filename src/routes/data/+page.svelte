@@ -6,12 +6,9 @@
 	import { invalidateAll } from '$app/navigation';
 	import { onMount } from 'svelte';
 
-	$: data, (data = data);
-
 	onMount(() => {
 		const interval = setInterval(() => {
 			invalidateAll();
-			console.log('just invalidated');
 		}, 3000);
 
 		return () => {
