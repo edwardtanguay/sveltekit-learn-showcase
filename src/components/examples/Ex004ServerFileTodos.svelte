@@ -20,5 +20,5 @@
 	</ul>
 	<p class=" pt-1">number of todos: {todos.length}</p>
 	<p class=" pt-1">number of todos doubled: {totalDoubled}</p>
-	<p class="devNote">This is simple exercise with reactive variables.</p>
+	<p class="devNote">This is a simple exercise with reactive variables.</p>
 </div>
