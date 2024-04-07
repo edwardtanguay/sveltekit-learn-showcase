@@ -13,7 +13,7 @@
 		const interval = setInterval(() => {
 			invalidateAll();
 			console.log('just invalidated');
-		}, 1000);
+		}, 3000);
 
 		return () => {
 			clearInterval(interval);
