@@ -1,12 +1,12 @@
 <script lang="ts">
 	export let data;
-	import Example from '../../components/Example.svelte';
-	import Ex004ServerFileTodos from '../../components/examples/Ex004ServerFileTodos.svelte';
+	import Example from '$lib/components/Example.svelte';
+	import Ex004ServerFileTodos from '$lib/components/examples/Ex004ServerFileTodos.svelte';
 	import * as tools from '$lib/tools';
 	import { invalidateAll } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	import Ex007Stores from '../../components/examples/Ex007Stores.svelte';
+	import Ex007Stores from '$lib/components/examples/Ex007Stores.svelte';
 
 	let innerWidth = 0;
 

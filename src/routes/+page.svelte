@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SiteInfo from '../components/SiteInfo.svelte';
+	import SiteInfo from '$lib/components/SiteInfo.svelte';
 	import img from '$lib/images/sveltekit.jpg';
 </script>
 

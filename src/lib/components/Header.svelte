@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { mobileMenuShowing } from '../stores';
+	import { mobileMenuShowing } from '$lib/stores';
 	import Nav from './Nav.svelte';
 	import 'iconify-icon';
 

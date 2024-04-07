@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Employee from '../../../components/Employee.svelte';
+	import Employee from '$lib/components/Employee.svelte';
 	export let data;
 </script>
 

@@ -1,10 +1,10 @@
 <script>
-	import Example from '../../components/Example.svelte';
-	import Ex001Test from '../../components/examples/Ex001Test.svelte';
-	import Ex002StaticImages from '../../components/examples/Ex002StaticImages.svelte';
-	import Ex003DynamicImages from '../../components/examples/Ex003DynamicImages.svelte';
-	import Ex005ArrayStateVariable from '../../components/examples/Ex005ArrayStateVariable.svelte';
-	import Ex007Stores from '../../components/examples/Ex007Stores.svelte';
+	import Example from '$lib/components/Example.svelte';
+	import Ex001Test from '$lib/components/examples/Ex001Test.svelte';
+	import Ex002StaticImages from '$lib/components/examples/Ex002StaticImages.svelte';
+	import Ex003DynamicImages from '$lib/components/examples/Ex003DynamicImages.svelte';
+	import Ex005ArrayStateVariable from '$lib/components/examples/Ex005ArrayStateVariable.svelte';
+	import Ex007Stores from '$lib/components/examples/Ex007Stores.svelte';
 </script>
 
 <section class="flex gap-6 flex-col md:flex-row">
