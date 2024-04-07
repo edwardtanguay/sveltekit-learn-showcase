@@ -7,7 +7,7 @@
 	import Ex007Stores from '../../components/examples/Ex007Stores.svelte';
 </script>
 
-<section class="flex gap-6">
+<section class="flex gap-6 flex-col md:flex-row">
 	<section>
 		<Example title="Ex001Test">
 			<Ex001Test />

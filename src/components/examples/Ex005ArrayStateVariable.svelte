@@ -14,7 +14,7 @@
 	};
 </script>
 
-<div class="w-[18rem]">
+<div class="w-100 md:w-[18rem]">
 	<form>
 		<input bind:value={newTodo} placeholder="new todo" />
 		<button on:click={addTodo} class="bg-gray-300 px-2 mt-2 rounded border border-gray-500 w-fit"
