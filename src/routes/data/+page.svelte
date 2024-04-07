@@ -7,15 +7,8 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		const interval = setInterval(() => {
-			invalidateAll();
-		}, 3000);
-
-		return () => {
-			clearInterval(interval);
-		};
+		invalidateAll();
 	});
-
 </script>
 
 <section>
