@@ -1,8 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import type { Todo } from '../../types';
-import { MONGO_COLLECTION, MONGO_USER, MONGO_PASSWORD, MONGO_ATLAS_CLUSTER_URL, MONGO_DATABASE } from '$env/static/private';
+import type { Todo } from '../types';
+import {
+	MONGO_COLLECTION,
+	MONGO_USER,
+	MONGO_PASSWORD,
+	MONGO_ATLAS_CLUSTER_URL,
+	MONGO_DATABASE
+} from '$env/static/private';
 
 dotenv.config();
 
@@ -23,7 +29,7 @@ export const getAllTodos = async (): Promise<Todo[]> => {
 		try {
 			(async () => {
 				const response = mongoose.connection.db.collection(MONGO_COLLECTION);
-				const todos:any[] = await response.find().toArray();
+				const todos: any[] = await response.find().toArray();
 				resolve(todos);
 			})();
 		} catch (error: any) {

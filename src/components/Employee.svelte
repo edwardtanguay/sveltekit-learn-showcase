@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Employee } from '../types';
+	import type { Employee } from '$lib/types';
 
 	export let employee: Employee;
 </script>

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as mongodb from '$lib/dataLayer/mongodb.server';
 
-import type { Todo } from '../../types';
+import type { Todo } from '$lib/types';
 
 const loadAllTodos = async () => {
 	const _todos: any[] = await mongodb.getAllTodos();

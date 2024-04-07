@@ -1,5 +1,5 @@
 import _employees from '$lib/data/employees.json';
-import { blankEmployee, type Employee } from '../../../types';
+import { blankEmployee, type Employee } from '$lib/types';
 
 export function load({ params }) {
 	const _employee = _employees.find((m) => String(m.employeeID) === params.id);
