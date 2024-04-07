@@ -14,7 +14,7 @@
 	};
 </script>
 
-<div class="w-100 md:w-[18rem]">
+<div class="w-100 md:w-[18rem] mt-3">
 	<form on:submit|preventDefault={addTodo} >
 		<input bind:value={newTodo} placeholder="new todo" />
 		<button class="bg-gray-300 px-2 mt-2 rounded border border-gray-500 w-fit"
