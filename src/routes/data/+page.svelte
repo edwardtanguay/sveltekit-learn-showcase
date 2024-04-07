@@ -16,7 +16,7 @@
 		<Ex004ServerFileTodos />
 	</Example>
 	<Example title="Ex006MongoDbAtlasTodoCrud">
-		<div>
+		<div class="w-[35rem]">
 			{#key data.todos}
 				<p class="mb-3 mt-2">There are {data.todos.length} todos.</p>
 				<ul class="font-mono text-orange-900">
@@ -27,6 +27,7 @@
 					{/each}
 				</ul>
 			{/key}
+			<p class="devNote">These todos are being fetched directly from a MongoDB database in the +page.server.ts file, which accesses environment variables to get the connection strings, etc. They are refetched on onMount() i.e. when the user reloads the browser.</p>
 		</div>
 	</Example>
 </section>
