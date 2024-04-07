@@ -3,8 +3,7 @@
 	import Example from '../../components/Example.svelte';
 	import Ex004ServerFileTodos from '../../components/examples/Ex004ServerFileTodos.svelte';
 	import * as tools from '$lib/tools';
-	import { goto, invalidateAll } from '$app/navigation';
-	// import { invalidate } from '$app/navigation';
+	import { invalidateAll } from '$app/navigation';
 	import { onMount } from 'svelte';
 
 	$: data, (data = data);
@@ -20,15 +19,6 @@
 		};
 	});
 
-	// function reloadPage() {
-	// 	const thisPage = window.location.pathname;
-
-	// 	console.log('goto ' + thisPage);
-
-	// 	goto('/').then(() => goto(thisPage));
-	// }
-
-	// reloadPage();
 </script>
 
 <section>
