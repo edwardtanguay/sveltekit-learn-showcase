@@ -14,3 +14,4 @@ This is a showcase site that I am creating while learning SvelteKit. It's purpos
 - clone locally
 - `npm i`
 - `npm run dev`
+    
