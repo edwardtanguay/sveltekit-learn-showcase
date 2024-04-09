@@ -1,6 +1,6 @@
 # sveltekit-the-learn-showcase
 
-This is a showcase site that I am creating while learning SvelteKit. It's purpose is to get SvelteKit's features working together as a realistic, online site at Vercel.
+This is a showcase site that I created while taking a course on SvelteKit. It's purpose is to get SvelteKit's features working together as a realistic, online site at Vercel. It is fully responsive, and has server-side functions that read/write to a MongoDB database with env variables. This would be a good starter site to create a SvelteKit website.
 
 - repo: https://github.com/edwardtanguay/sveltekit-the-learn-showcase
 - live: https://sveltekit-the-learn-showcase.vercel.app
